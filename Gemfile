@@ -61,3 +61,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "graphiql-rails", group: :development
+
+gem "graphql", "~> 2.5"
+
+gem "faker", "~> 3.5"
