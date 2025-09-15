@@ -1,0 +1,4 @@
+// @apollo/client/link/utils@4.0.4 downloaded from https://ga.jspm.io/npm:@apollo/client@4.0.4/link/utils/index.js
+
+import{getOperationDefinition as e,getOperationName as t}from"@apollo/client/utilities/internal";import{visit as n}from"graphql";function r(n,{client:r}){const o={query:n.query,variables:n.variables||{},extensions:n.extensions||{},operationName:t(n.query),operationType:e(n.query).operation};let i={...n.context};const a=e=>{i=typeof e==="function"?{...i,...e(l())}:{...i,...e}};const l=()=>Object.freeze({...i});Object.defineProperty(o,"setContext",{enumerable:false,value:a});Object.defineProperty(o,"getContext",{enumerable:false,value:l});Object.defineProperty(o,"client",{enumerable:false,value:r});return o}function o(e,t){const r={...e};const o=new Set(Object.keys(e));n(t,{Variable(e,t,n){n&&n.kind!=="VariableDefinition"&&o.delete(e.name.value)}});o.forEach((e=>{delete r[e]}));return r}export{r as createOperation,o as filterOperationVariables};
+

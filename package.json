@@ -1,0 +1,14 @@
+{
+  "name": "graphiqlApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nicholastonelli/graphqlApp.git",
+  "author": "nicholastonelli <nicholasevantonelli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^4.0.5",
+    "graphiql": "^5.2.0",
+    "graphql": "^16.11.0",
+    "graphql-ruby-client": "^1.14.8"
+  }
+}

@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+100.times do
+  location = Location.create! name: Faker::Address.unique.city
+end
+
+puts "Locations: #{Location.count}"
