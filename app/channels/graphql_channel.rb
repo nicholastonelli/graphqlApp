@@ -7,15 +7,11 @@ class GraphqlChannel < ApplicationCable::Channel
   end
 
   def execute(data)
-    puts data
-    puts "data[variables]"
-    puts data["variables"]
     query = data["query"]
     variables = ensure_hash(data["variables"])
     operation_name = data["operationName"]
     context = {
-      channel: self,
-      #current_application_context: connection.current_application_context
+      channel: self
     }
 
     #result = AppSchema.execute({

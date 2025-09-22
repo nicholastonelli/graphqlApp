@@ -118,9 +118,7 @@ GEM
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    graphiql-rails (1.10.5)
-      railties
-    graphql (2.5.12)
+    graphql (2.5.13)
       base64
       fiber-storage
       logger
@@ -385,8 +383,7 @@ DEPENDENCIES
   capybara
   debug
   faker (~> 3.5)
-  graphiql-rails
-  graphql (~> 2.5)
+  graphql (~> 2.5.13)
   importmap-rails
   jbuilder
   jsbundling-rails (~> 1.3)

@@ -11,7 +11,7 @@ class Location < ApplicationRecord
 
   def trigger_location_posted_event
     puts "CHECKING POST"
-    AppSchema.subscriptions.trigger("locationPosted", {}, { location: self })
+    #AppSchema.subscriptions.trigger("locationPosted", {}, { location: self })
   end
 
   def trigger_location_updated_event
