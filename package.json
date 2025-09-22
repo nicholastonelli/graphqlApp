@@ -7,8 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "@apollo/client": "^4.0.5",
+    "esbuild-rails": "^1.0.7",
     "graphiql": "^5.2.0",
     "graphql": "^16.11.0",
     "graphql-ruby-client": "^1.14.8"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
   }
 }

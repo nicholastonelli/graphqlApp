@@ -62,8 +62,10 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "graphiql-rails", group: :development
+# gem "graphiql-rails", group: :development
 
-gem "graphql", "~> 2.5"
+gem "graphql", "~> 2.5.13"
 
 gem "faker", "~> 3.5"
+
+gem "jsbundling-rails", "~> 1.3"
