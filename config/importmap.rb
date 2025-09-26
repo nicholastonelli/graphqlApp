@@ -7,8 +7,8 @@ pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "@rails/actioncable", to: "actioncable.esm.js"
 pin_all_from "app/javascript/channels", under: "channels"
-pin "graphql" # @16.11.0
-pin "graphql-ruby-client" # @1.14.8
+#pin "graphql" # @16.11.0
+#pin "graphql-ruby-client" # @1.14.8
 pin "@apollo/client/cache", to: "@apollo--client--cache.js" # @4.0.4
 pin "@apollo/client/core", to: "@apollo--client--core.js" # @4.0.4
 pin "@apollo/client/errors", to: "@apollo--client--errors.js" # @4.0.4
@@ -66,3 +66,26 @@ pin "relay-runtime" # @20.1.1
 pin "rxjs" # @7.8.2
 pin "tslib" # @2.8.1
 pin "url" # @2.1.0
+
+
+
+pin "react", to: "https://esm.sh/react@19.1.0"
+pin "react/", to: "https://esm.sh/react@19.1.0/"
+
+pin "react-dom", to: "https://esm.sh/react-dom@19.1.0"
+pin "react-dom/", to: "https://esm.sh/react-dom@19.1.0/"
+
+pin "graphiql", to: "https://esm.sh/graphiql?standalone&external=react,react-dom,@graphiql/react,graphql"
+pin "graphiql/", to: "https://esm.sh/graphiql/"
+
+pin "@graphiql/plugin-explorer", to: "https://esm.sh/@graphiql/plugin-explorer?standalone&external=react,@graphiql/react,graphql"
+pin "@graphiql/react", to: "https://esm.sh/@graphiql/react?standalone&external=react,react-dom,graphql,@graphiql/toolkit,@emotion/is-prop-valid"
+
+pin "@graphiql/toolkit", to: "https://esm.sh/@graphiql/toolkit?standalone&external=graphql"
+pin "graphql", to: "https://esm.sh/graphql@16.11.0"
+pin "@emotion/is-prop-valid", to: "data:text/javascript,"
+
+#pin "@rails/actioncable", to: "https://esm.sh/@rails/actioncable@8.0.201"
+
+pin "graphql-ruby-client", to: "https://esm.sh/graphql-ruby-client@1.14.8"
+pin "graphql-ruby-client/", to: "https://esm.sh/graphql-ruby-client@1.14.8/"

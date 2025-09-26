@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
 
   if Rails.env.development?
-    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
+    #mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
   end
 
   mount ActionCable.server, at: "/cable"
@@ -21,4 +21,6 @@ Rails.application.routes.draw do
   #root "posts#index"
 
   root "main_page#index"
+
+  get "/graph", to: "graph#index"
 end
