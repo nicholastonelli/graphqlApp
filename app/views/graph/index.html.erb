@@ -37,12 +37,8 @@ Grpahiql in pipeline page
       import "graphiql/setup-workers/esm.sh"
 
       import { createConsumer } from "@rails/actioncable"
-
       import * as ActionCable from "@rails/actioncable"
-
-      
       import * as graphqlRubyClient from "graphql-ruby-client"
-
       import createActionCableFetcher from 'graphql-ruby-client/subscriptions/createActionCableFetcher';
 
       const actionCable = createConsumer()
@@ -65,6 +61,9 @@ Grpahiql in pipeline page
       const container = document.getElementById("graphiql")
       const root = ReactDOM.createRoot(container)
       root.render(React.createElement(App))
+    </script>
+
+    <script>
 
     </script>
 

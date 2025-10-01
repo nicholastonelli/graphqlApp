@@ -1,4 +1,0 @@
-// @apollo/client/link/client-awareness@4.0.4 downloaded from https://ga.jspm.io/npm:@apollo/client@4.0.4/link/client-awareness/index.js
-
-import{ApolloLink as e}from"@apollo/client/link";import{compact as n}from"@apollo/client/utilities/internal";class ClientAwarenessLink extends e{constructor(e={}){super(((s,t)=>{const o=s.client;const r=o.queryManager.clientOptions;const i=s.getContext();{const{name:t,version:o,transport:l="headers"}=n({},r.clientAwareness,e.clientAwareness,i.clientAwareness);l==="headers"&&s.setContext((({headers:e,extensions:s})=>({headers:n({"apollographql-client-name":t,"apollographql-client-version":o},e)})))}{const{transport:t="extensions"}=n({},r.enhancedClientAwareness,e.enhancedClientAwareness);t==="extensions"&&(s.extensions=n({clientLibrary:{name:"@apollo/client",version:o.version}},s.extensions))}return t(s)}))}}export{ClientAwarenessLink};
-
