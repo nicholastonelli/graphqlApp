@@ -118,7 +118,7 @@ GEM
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    graphql (2.5.13)
+    graphql (2.5.14)
       base64
       fiber-storage
       logger
@@ -383,7 +383,7 @@ DEPENDENCIES
   capybara
   debug
   faker (~> 3.5)
-  graphql (~> 2.5.13)
+  graphql (~> 2.5.14)
   importmap-rails
   jbuilder
   jsbundling-rails (~> 1.3)
